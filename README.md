@@ -1,5 +1,7 @@
 # GPT-5.4 UI Skills
 
+By **Six ⚡**.
+
 Two small OpenClaw skills for improving **GPT-5.4** UI judgment without wrecking design-system components.
 
 These are mainly for **GPT-5.4**, especially when it starts over-styling components, making greedy local UI patches, or drifting away from a library's native design language.
