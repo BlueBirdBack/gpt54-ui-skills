@@ -1,4 +1,4 @@
-# Six ⚡ UI Skills
+# GPT-5.4 UI Skills
 
 Two small OpenClaw skills for improving **GPT-5.4** UI judgment without wrecking design-system components.
 
@@ -8,6 +8,14 @@ These are mainly for **GPT-5.4**, especially when it starts over-styling compone
 
 - `design-system-preserve`
 - `ui-review-loop`
+
+## External taste reference
+
+The main taste reference for `ui-review-loop` is:
+- **GStack design-review** — https://github.com/garrytan/gstack/tree/main/design-review
+
+Use it as a visual/style reference for restraint, hierarchy, spacing, and polish.
+Do **not** copy it blindly or override a component until it stops looking native to its own design system.
 
 ## Why
 
@@ -36,4 +44,5 @@ skills/
     references/
       checklist.md
       failure-taxonomy.md
+      taste-reference.md
 ```

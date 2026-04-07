@@ -21,6 +21,8 @@ Use these sources in order:
 
 Never judge from code alone if a screenshot can be taken.
 
+Read `references/taste-reference.md` when you need the explicit external taste reference and the rules for how to use it.
+
 ## Review loop
 
 1. **State the role**
