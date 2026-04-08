@@ -16,12 +16,14 @@ If the UI uses a design-system component, pair this skill with `design-system-pr
 
 Use these sources in order:
 1. **Component truth** — the library docs example (Nuxt UI, shadcn, etc.)
-2. **Taste reference** — e.g. GStack design-review
+2. **Taste reference** — e.g. GStack design-review or `impeccable`
 3. **Reality** — the live screenshot
 
 Never judge from code alone if a screenshot can be taken.
 
-Read `references/taste-reference.md` when you need the explicit external taste reference and the rules for how to use it.
+Read these references when needed:
+- `references/taste-reference.md` for how to use external taste references without blindly copying them
+- `references/design-moves.md` for the named design moves inspired by `impeccable`
 
 ## Review loop
 
@@ -46,8 +48,21 @@ Read `references/taste-reference.md` when you need the explicit external taste r
    - too loud / theatrical
    - poor placement
    - text wrap / header crush
+   - card monotony
+   - centered-everything drift
+   - typography mush
+   - internal-tool heaviness
 
-4. **Pick one axis only**
+4. **Choose the right design move**
+   Prefer a named move before touching code:
+   - **clarify** — improve hierarchy, meaning, or emphasis
+   - **quieter** — reduce heaviness, noise, theatrics, or visual shouting
+   - **arrange** — fix placement, layout rhythm, spacing, or composition
+   - **typeset** — fix measure, leading, scale contrast, or text density
+   - **normalize** — bring drifted UI back toward the design system or docs
+   - **harden** — fix overflow, empty/error states, or i18n/edge-case breakage
+
+5. **Pick one axis only**
    Change only one of:
    - placement
    - width
@@ -56,12 +71,13 @@ Read `references/taste-reference.md` when you need the explicit external taste r
    - contrast layer
    - typography hierarchy
 
-5. **Patch minimally**
+6. **Patch minimally**
    - prefer the smallest possible fix
    - avoid stacked overrides
+   - let the chosen move guide the patch
    - if multiple things look wrong, fix the most damaging one first
 
-6. **Re-check with screenshot**
+7. **Re-check with screenshot**
    - if better, continue only if needed
    - if worse, mentally reset and retry with a smaller change
 
@@ -69,14 +85,17 @@ Read `references/taste-reference.md` when you need the explicit external taste r
 
 - Screenshot first, judgment second
 - One-axis edits beat multi-axis edits
+- Use the smallest fitting design move before inventing a custom theory
 - If the component starts looking homemade, back out
 - Do not confuse "more visible" with "better"
 - Do not keep layering edits on top of a bad direction
+- Do not use cards, gradients, blur, or accent color just to fake importance
 
 ## Output standard
 
 When reporting, say:
 - what looked wrong
+- which design move you chose
 - what single fix you applied
 - whether the new screenshot is actually better
 - what still remains, if anything

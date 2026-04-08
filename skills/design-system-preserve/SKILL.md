@@ -32,6 +32,13 @@ Do **not** redesign a design-system component unless the user explicitly asks fo
    - border thickness
    - icon sizing
 
+   If you need more than that, stop and ask what kind of move this really is:
+   - **normalize** back toward stock?
+   - **quieter** because it got too loud/heavy?
+   - **clarify** because hierarchy is weak?
+
+   Most design-system fixes are one of those three — not a redesign.
+
 3. **Preserve geometry**
    - Keep the library's proportions, padding rhythm, corner radius, and visual balance.
    - If you need to force `display`, `gap`, `padding`, or `border-radius`, stop and verify that the component still matches the docs.
@@ -39,6 +46,13 @@ Do **not** redesign a design-system component unless the user explicitly asks fo
 4. **Compare against the docs**
    - Ask: does this still read as the same component family?
    - If the change makes the component look homemade, back out and retry with fewer overrides.
+   - If you are solving a visibility problem, prefer this order:
+     1. placement
+     2. hierarchy clarification
+     3. slight tint
+     4. one contrast layer
+
+   Do not jump straight to heavier shadows, larger radius, or custom background effects.
 
 5. **One-axis edits**
    - Change one axis at a time:
@@ -54,6 +68,8 @@ Avoid these unless the user explicitly wants a redesign:
 - turning a compact alert into a banner/blob/strip
 - fixing visibility by making the whole component louder instead of more legible
 - editing on top of bad edits instead of resetting to stock behavior
+- introducing premium-looking noise (glass, glow, gradient, heavy blur) just because the component felt boring
+- changing multiple geometry variables at once and then calling the result "closer to the docs"
 
 ## Reset rule
 
