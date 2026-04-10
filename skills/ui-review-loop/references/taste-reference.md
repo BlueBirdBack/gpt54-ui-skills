@@ -9,39 +9,40 @@
 
 ## What to learn from them
 
-Use these references as taste guides for:
+Use these references for:
 - restraint
 - spacing rhythm
 - hierarchy
-- cleaner overlays and panels
-- better typography judgment
-- making UI feel deliberate instead of patched together
+- typography judgment
+- calmer overlays and panels
+
+Use `getdesign.md` as a specimen library.
+Study density, accents, and surface treatment.
+Do not use it to copy a brand.
 
 ## What not to do
 
-Do **not** treat these references as a license to redesign every component.
-If the target UI uses a design-system component, keep that component native first.
+Do not redesign every component.
+If the UI uses a design-system component, keep it native first.
 
-Use them to improve:
-- proportion
-- width/spacing judgment
-- placement judgment
-- visual calm
-- typography rhythm
-- anti-slop taste
-
-Do not use them to justify unnecessary overrides of:
+Do not use these references to justify changing:
 - radius
 - internal layout
 - component geometry
 - shadow language
 - typography scale
 
-Do not copy `impeccable`'s repo complexity or voice wholesale.
-Borrow the judgment, not the cargo cult.
+Do not copy `impeccable`'s repo complexity.
+Do not copy `getdesign.md` specimens as "premium" shortcuts.
+Borrow judgment, not styling.
+
+## Supplementary specimen library
+
+For concrete examples, read `references/style-specimens.md`.
 
 ## Recommended pairing
 
-Use this reference together with:
-- `design-system-preserve` for native component guardrails
-- `ui-review-loop` for screenshot-based critique and one-axis fixes
+Use this reference with:
+- `design-system-preserve`
+- `ui-review-loop`
+- `style-specimens.md` when concrete style examples help

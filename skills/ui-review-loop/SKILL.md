@@ -24,6 +24,7 @@ Never judge from code alone if a screenshot can be taken.
 Read these references when needed:
 - `references/taste-reference.md` for how to use external taste references without blindly copying them
 - `references/design-moves.md` for the named design moves inspired by `impeccable`
+- `references/style-specimens.md` for concrete DESIGN.md examples to study for density, accent discipline, and surface restraint without turning the task into website mimicry
 
 ## Review loop
 

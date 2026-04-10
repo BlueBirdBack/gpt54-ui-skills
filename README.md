@@ -13,24 +13,20 @@ This repo now also borrows selectively from **pbakaus/impeccable** — mainly it
 - `design-system-preserve`
 - `ui-review-loop`
 
-## External taste reference
+## External taste references
 
-The main taste references for `ui-review-loop` are:
+Primary references:
 - **GStack design-review** — https://github.com/garrytan/gstack/tree/main/design-review
 - **pbakaus/impeccable** — https://github.com/pbakaus/impeccable
 
-Use them as taste references for restraint, hierarchy, spacing, typography, and polish.
-Do **not** copy them blindly or override a component until it stops looking native to its own design system.
+Supplementary reference:
+- **getdesign.md / DESIGN.md collection** — https://getdesign.md/
 
-What we want from `impeccable` specifically:
-- better naming for design moves
-- stronger anti-slop taste rules
-- better judgment about layout rhythm, typography, and visual calm
+Use GStack and `impeccable` for critique and restraint.
+Use `getdesign.md` for concrete style examples.
 
-What we do **not** want to import blindly:
-- repo architecture complexity
-- duplicated truth across docs/configs
-- provider/distribution drift
+Do not copy brand styling, gradients, fonts, or component geometry.
+Use it to improve taste, not to mimic websites.
 
 ## Why
 
@@ -61,5 +57,6 @@ skills/
       checklist.md
       design-moves.md
       failure-taxonomy.md
+      style-specimens.md
       taste-reference.md
 ```
